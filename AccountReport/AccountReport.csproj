@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1281179D-FD36-47A5-8311-B614CCAEEFEF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AccountReport</RootNamespace>
+    <AssemblyName>AccountReport</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\FormAccountControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\FormAccountControl.Designer.cs">
+      <DependentUpon>FormAccountControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\FormAccountHead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\FormAccountHead.Designer.cs">
+      <DependentUpon>FormAccountHead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\FormAccountSubControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\FormAccountSubControl.Designer.cs">
+      <DependentUpon>FormAccountSubControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\FormFinancialYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\FormFinancialYear.Designer.cs">
+      <DependentUpon>FormFinancialYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseAccess.cs" />
+    <Compile Include="Main\MainForm.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase\FormCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\FormCustomer.Designer.cs">
+      <DependentUpon>FormCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\FormSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\FormSupplier.Designer.cs">
+      <DependentUpon>FormSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\formCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\formCategories.Designer.cs">
+      <DependentUpon>formCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\formProductDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\formProductDetails.Designer.cs">
+      <DependentUpon>formProductDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\formAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\formAddUser.Designer.cs">
+      <DependentUpon>formAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\formUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\formUpdateUser.Designer.cs">
+      <DependentUpon>formUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\formUserTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\formUserTypes.Designer.cs">
+      <DependentUpon>formUserTypes.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Main\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="Report\" />
+    <Folder Include="SourceCode\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
