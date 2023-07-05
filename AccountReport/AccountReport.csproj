@@ -153,6 +153,8 @@
     <Compile Include="Purchase\FormSupplier.Designer.cs">
       <DependentUpon>FormSupplier.cs</DependentUpon>
     </Compile>
+    <Compile Include="SourceCode\ComboHelper.cs" />
+    <Compile Include="SourceCode\CurrentUser.cs" />
     <Compile Include="Stock\formCategories.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,7 +205,14 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="User\formAddUser.resx">
+      <DependentUpon>formAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -219,9 +228,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
     <Folder Include="Report\" />
-    <Folder Include="SourceCode\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\UserType.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
