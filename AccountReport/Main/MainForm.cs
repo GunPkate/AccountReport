@@ -13,6 +13,7 @@ using AccountReport.Product;
 using AccountReport.Purchase;
 using AccountReport.Report;
 using AccountReport.StockForm;
+using AccountReport.SupplierAndCustomer;
 using AccountReport.UserForm;
 
 namespace AccountReport
