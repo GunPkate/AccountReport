@@ -95,6 +95,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -153,6 +154,12 @@
     <Compile Include="Purchase\FormSupplier.Designer.cs">
       <DependentUpon>FormSupplier.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report\FormCustomerReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FormCustomerReport.Designer.cs">
+      <DependentUpon>FormCustomerReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="SourceCode\ComboHelper.cs" />
     <Compile Include="SourceCode\CurrentUser.cs" />
     <Compile Include="Stock\formCategories.cs">
@@ -207,6 +214,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report\FormCustomerReport.resx">
+      <DependentUpon>FormCustomerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\formProductDetails.resx">
+      <DependentUpon>formProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User\formAddUser.resx">
       <DependentUpon>formAddUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,13 +236,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Report\CustomerReport.rpt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Report\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Images\Refresh.png" />
   </ItemGroup>

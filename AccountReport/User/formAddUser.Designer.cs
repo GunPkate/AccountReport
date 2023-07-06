@@ -248,6 +248,7 @@ namespace AccountingReport.User
             // 
             // btnUserTypes
             // 
+            this.btnUserTypes.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnUserTypes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnUserTypes.Image = global::AccountReport.Properties.Resources.UserType;
             this.btnUserTypes.Location = new System.Drawing.Point(464, 81);

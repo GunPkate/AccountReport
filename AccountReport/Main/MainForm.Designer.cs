@@ -34,6 +34,7 @@ namespace AccountReport
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.purchaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,7 +57,6 @@ namespace AccountReport
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.panelParent = new System.Windows.Forms.Panel();
-            this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripAll.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -73,7 +73,8 @@ namespace AccountReport
             this.reporttToolStripMenuItem});
             this.menuStripAll.Location = new System.Drawing.Point(0, 0);
             this.menuStripAll.Name = "menuStripAll";
-            this.menuStripAll.Size = new System.Drawing.Size(800, 24);
+            this.menuStripAll.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStripAll.Size = new System.Drawing.Size(686, 24);
             this.menuStripAll.TabIndex = 0;
             this.menuStripAll.Text = "menuStrip1";
             // 
@@ -98,6 +99,13 @@ namespace AccountReport
             this.supplierToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.supplierToolStripMenuItem.Text = "Supplier";
             this.supplierToolStripMenuItem.Click += new System.EventHandler(this.supplierToolStripMenuItem_Click);
+            // 
+            // customerToolStripMenuItem
+            // 
+            this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
+            this.customerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.customerToolStripMenuItem.Text = "Customer";
+            this.customerToolStripMenuItem.Click += new System.EventHandler(this.customerToolStripMenuItem_Click);
             // 
             // salesToolStripMenuItem
             // 
@@ -210,8 +218,9 @@ namespace AccountReport
             // reportToolStripMenuItem
             // 
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.reportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reportToolStripMenuItem.Text = "Report";
+            this.reportToolStripMenuItem.Click += new System.EventHandler(this.reportToolStripMenuItem_Click);
             // 
             // toolStrip1
             // 
@@ -220,7 +229,7 @@ namespace AccountReport
             this.btnLogout});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 38);
+            this.toolStrip1.Size = new System.Drawing.Size(686, 38);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -257,9 +266,10 @@ namespace AccountReport
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 368);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 12, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(686, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -274,21 +284,14 @@ namespace AccountReport
             this.panelParent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelParent.Location = new System.Drawing.Point(0, 62);
             this.panelParent.Name = "panelParent";
-            this.panelParent.Size = new System.Drawing.Size(800, 366);
+            this.panelParent.Size = new System.Drawing.Size(686, 306);
             this.panelParent.TabIndex = 3;
-            // 
-            // customerToolStripMenuItem
-            // 
-            this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            this.customerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.customerToolStripMenuItem.Text = "Customer";
-            this.customerToolStripMenuItem.Click += new System.EventHandler(this.customerToolStripMenuItem_Click);
             // 
             // mainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(686, 390);
             this.Controls.Add(this.panelParent);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);

@@ -9,8 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AccountingReport.User;
 using AccountReport.Account;
+using AccountReport.Product;
 using AccountReport.Purchase;
-using AccountReport.Stock;
+using AccountReport.Report;
+using AccountReport.StockForm;
 using AccountReport.UserForm;
 
 namespace AccountReport
@@ -118,6 +120,12 @@ namespace AccountReport
         {
             FormCustomer formCustomer = new FormCustomer();
             formCustomer.ShowDialog();
+        }
+
+        private void reportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCustomerReport formCustomerReport = new FormCustomerReport();
+            formCustomerReport.ShowDialog();
         }
     }
 }
