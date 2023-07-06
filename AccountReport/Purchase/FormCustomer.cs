@@ -298,6 +298,7 @@ namespace AccountReport.Purchase
         private void btn_Print_Click(object sender, EventArgs e)
         {
             FormCustomerReport customerReport = new FormCustomerReport();
+            customerReport.ShowDialog();
         }
     }
 }
