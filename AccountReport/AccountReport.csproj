@@ -162,16 +162,16 @@
     </Compile>
     <Compile Include="SourceCode\ComboHelper.cs" />
     <Compile Include="SourceCode\CurrentUser.cs" />
-    <Compile Include="Stock\formCategories.cs">
+    <Compile Include="StockForm\formCategories.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Stock\formCategories.Designer.cs">
+    <Compile Include="StockForm\formCategories.Designer.cs">
       <DependentUpon>formCategories.cs</DependentUpon>
     </Compile>
-    <Compile Include="Stock\formProductDetails.cs">
+    <Compile Include="StockForm\formProductDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Stock\formProductDetails.Designer.cs">
+    <Compile Include="StockForm\formProductDetails.Designer.cs">
       <DependentUpon>formProductDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="User\formAddUser.cs">
@@ -217,7 +217,7 @@
     <EmbeddedResource Include="Report\FormCustomerReport.resx">
       <DependentUpon>FormCustomerReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Stock\formProductDetails.resx">
+    <EmbeddedResource Include="StockForm\formProductDetails.resx">
       <DependentUpon>formProductDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\formAddUser.resx">
